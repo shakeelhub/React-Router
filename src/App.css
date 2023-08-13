@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  text-decoration: none;
+  gap:50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav li {
+  margin: 0 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.line{
+  width: 100%;
+  border: 1px solid rgb(135, 130, 130);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav li a{
+  text-decoration: none;
+  color:rgb(85,91,97);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+nav li a:hover{
+  color:rgb(85,183,89);
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(85,183,89);
+  transition: 0.3s;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap:5px;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  margin-left: 6%;
+}
+
+
+.card {
+  margin-left: 22px; 
+  padding-bottom: 40px;
+  width: 28%;
+  border-radius: 8px;
+  transition: box-shadow .3s;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.card:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
-.App-link {
-  color: #61dafb;
+.course-list .card {
+  background-color: white;
+  padding-bottom: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+ word-spacing: 14px;
+ line-height: 30px;
+}
+
+.card p {
+  font-size: 14px;
+  padding-left: 20px;
+  color: #666;
+}
+
+.card a {
+  display: inline-block;
+  color: rgb(85,183,89);
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.main-img{
+ width: 90%;
+ margin-left: 6%;
+  height:auto;
+ padding-bottom: 30px;
+}
+
+.image{
+  width: auto;
 }
