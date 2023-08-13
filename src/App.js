@@ -8,13 +8,14 @@ import CyberSecurity from './pages/Cyber';
 import Career from './pages/Career';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import headerImage from './assets/header.png';
 
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-        <img className='main-img' src='https://www.guvi.in/blog/wp-content/uploads/2022/10/blog-header-2048x315.png' alt=''/>
+        <img className='main-img' src={headerImage} alt=''/>
         <Navigation />
         <Routes>
           <Route path="/" element={<All />} />
